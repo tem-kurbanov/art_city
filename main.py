@@ -403,17 +403,12 @@ def save_graph_csv(positions, edges, costs, filepath, n_criteria=1):
         # First line: number of nodes, number of edges
         writer.writerow([n_nodes, n_edges])
         
-        # Blank line
-        writer.writerow([])
-        
         # Header line: fromId,toId,d,c1,c2,...
         header = ['fromId', 'toId', 'd']
         for i in range(1, n_criteria):
             header.append(f'c{i}')
         writer.writerow(header)
         
-        # Blank line after header
-        writer.writerow([])
         
         # Write edges sorted by fromId, then toId for consistency
         sorted_edges = sorted(edges)
