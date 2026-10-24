@@ -219,6 +219,12 @@ Visualizations are saved as PNG files unless `--no-save` is used.
 - The algorithm may need multiple attempts to generate a valid strongly connected graph
 - Seeds are automatically generated based on current time, but can be made deterministic by modifying the code
 
+## Citation
+
+The graph generation algorithm implemented here is based on:
+
+Letchford, A. N., Nasiri, S. D., and Oukil, A. (2014). Pricing routines for vehicle routing with time windows on road networks. *Computers & Operations Research*, 51:331–337.
+
 ## License
 
 This project is provided as-is for research and educational purposes.
